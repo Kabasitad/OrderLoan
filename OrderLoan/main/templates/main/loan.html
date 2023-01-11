@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+{% block title %}
+Create New List
+{% endblock %}
+ 
+{% block content %}
+	<h3>Create a New Client</h3>
+	<br>
+	<form method="post" action=" " class="form-group">
+		{% csrf_token %}
+        {{form}}
+		<div class="input-group mb-3">
+	  		<div class="input-group-prepend">
+	  		<button name="save" type="submit" class="btn btn-success">Order Loan</button>
+	  		</div>
+	  		
+		</div>
+	</form>
+{% endblock %}
